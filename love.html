@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>1996 - DengSir</title>
+    <title>吴先生 LOVE 小雷</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
@@ -99,18 +99,18 @@
 <body>
 <!--更改为你女朋友的头像-->
 <div class="cs">
-    <img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
+    <img src="logo.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
-    We fell in love
+    I fall in love
     <br/>
     <span id="span_dt_dt"></span>
 </p>
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("2/20/2018 00:00:00");//这个日期是可以修改的
+        BirthDay = new Date("06/21/2019 00:00:00");//这个日期是可以修改的
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -133,8 +133,40 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-			//想说的话
-            S.UI.simulate("娜娜|I'm|ZLOE|Nice|to|Meet|You|#countdown 3|#time");
+            S.UI.simulate("我如果爱你——" +
+                "|绝不像攀援的凌霄花，" +
+                "|借你的高枝炫耀自己；" +
+                "|我如果爱你——" +
+                "|绝不学痴情的鸟儿，" +
+                "|为绿荫重复———" +
+                "|单调的歌曲；" +
+                "|也不止像泉源，" +
+                "|常年送来清凉的慰藉；" +
+                "|也不止像险峰，" +
+                "|增加你的高度，" +
+                "衬托你的威仪。" +
+                "|甚至日光，" +
+                "甚至春雨。" +
+                "|不，这些都还不够！" +
+                "|我必须是————" +
+                "|你近旁的一株木棉，" +
+                "|作为树的形象和你站在一起。" +
+                "|每一阵风过，" +
+                "|我们都互相致意，" +
+                "|但没有人，听懂我们的言语。" +
+                "|你有你的铜枝铁干像刀戟，" +
+                "|我有我红硕的花朵" +
+                "|像沉重的叹息" +
+                "|我们分担 ————" +
+                "|寒潮 风雷 霹雳" +
+                "|我们共享 ————" +
+                "|雾霭流岚与虹霓" +
+                "|仿佛永远分离，却又终身相依。" +
+                "|我如果爱你——" +
+                "|不仅爱你伟岸的身躯，" +
+                "|也爱你足下的土地。" +
+                "|#countdown 3" +
+                "| 小雷我喜欢你 ");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -260,7 +292,7 @@
                             } else {
                                 S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
                             }
-                        }, 1000, value, true);
+                        }, 3000, value, true);
                         break;
 
                     case 'rectangle':
@@ -295,7 +327,7 @@
                     default:
                         S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' : current));
                 }
-            }, 2000, sequence.length);
+            }, 4500, sequence.length);
         }
 
         return {
@@ -435,7 +467,7 @@
 
 
     S.ShapeBuilder = (function () {
-        var gap = 13,
+        var gap = 7,
             shapeCanvas = document.createElement('canvas'),
             shapeContext = shapeCanvas.getContext('2d'),
             fontSize = 500,
@@ -667,9 +699,8 @@
     }());
     S.init();
 </script>
-//音乐可改
 <audio autoplay="autoplay" loop="loop">
-    <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
+    <source src="https://m701.music.126.net/20190807002856/4355e87e1eac33ddcaf7c20286ac3a2a/jdyyaac/050f/060f/565b/2e4ad80fc81e95986f59a11dc3f71b53.m4a" type="audio/mpeg">
 </audio>
 </body>
 </html>
